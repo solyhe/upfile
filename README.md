@@ -1,4 +1,4 @@
-# uldl · Cloudflare Workers + KV 个人文件中转站
+# upfile · Cloudflare Workers + KV 个人文件中转站
 
 一个部署在 Cloudflare Workers 上的极简私人文件上传 / 下载 / 删除工具，数据存于 KV，自带网页文件列表与密码保护。
 
@@ -11,7 +11,7 @@
 - **安全**：所有写操作需 `X-Secret` 请求头；列表页需密码登录，登录态 Cookie 1 小时有效，`HttpOnly + SameSite=Lax`。
 - **其他**：上传时间统一按北京时间（UTC+8）显示；文件名 HTML 转义防 XSS；自动分页拉取全部 KV key；单文件上限 25 MiB（KV 限制）。
 
-## 部署（无需 wrangler，全程在 Cloudflare 控制台操作）
+## 部署
 
 ### 1. 创建 KV 命名空间
 
