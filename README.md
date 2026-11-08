@@ -103,7 +103,7 @@ https://uldl.xxx.workers.dev/list
 
 ```
 .
-├── worker.js      # Cloudflare Workers 入口
+├── _worker.js      # Cloudflare Workers 入口
 └── README.md
 ```
 
@@ -114,4 +114,3 @@ https://uldl.xxx.workers.dev/list
 - 上传时间存于 KV metadata，历史旧数据若没有 metadata，时间列显示 `-`，重新上传一次即可补齐。
 - 该服务是私人工具，请保管好密钥，不要公开分享。
 
-> （注：部分内容由豆包 AI 生成）
